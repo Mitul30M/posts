@@ -1,0 +1,27 @@
+<%- include('partials/partials.ejs') %>
+
+    <body>
+
+
+        <form method="post" action="/posts" class="form-control pt-6 text-start">
+
+            <label for="postTitle">Post Title:</label>
+            <textarea name="postTitle" id="postTitle" class="form-control"></textarea>
+
+            <label for="postDesc" class="mt-5">Post Description:</label>
+            <textarea name="postDesc" id="postDesc" class="form-control"></textarea>
+
+            <label for="postBanner" class="mt-5">Post Banner:</label>
+            <textarea name="postBanner" id="postBanner" class="form-control" placeholder="URL of the img to be used as Banner"></textarea>
+
+            <button class="form-control btn btn-dark mt-5">Add</button>
+
+
+        </form>
+
+
+
+
+    </body>
+
+    </html>

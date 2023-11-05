@@ -1,0 +1,53 @@
+<%- include('partials/partials.ejs') %>
+
+    <body>
+
+        <div class="cardHolder">
+
+            <div class="card text-bg-dark text-light" style="width: 18rem;">
+                <img src="<%= postBanner %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <%= postTitle %>
+                    </h5>
+                    <p class="card-text">
+                        <%= postDesc %>
+                    </p>
+                </div>
+
+                <div class="card-body d-flex g-2">
+
+                    <a href="/posts/<%= id %>/edit"><button class="btn btn-dark">Edit</button></a>
+
+                    <form action="/posts/<%= id %>?_method=delete" method="post">
+                        <button class="btn btn-dark text-danger">Delete</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="info">
+
+                <h5>#<%= id %>
+                </h5>
+
+                <h3 style="margin-top: 1rem;">
+                    <%= postTitle %>
+                </h3>
+
+                <p style="margin-top: 2.5rem;font-size: 1rem;">
+                    <%= postDesc %>
+                </p>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+    </body>
+
+    </html>

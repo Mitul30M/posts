@@ -1,0 +1,46 @@
+<%- include('partials/partials.ejs') %>
+
+    <body>
+
+        <div class="cardHolder">
+
+
+
+
+            <% for( let post of data ) { %>
+
+                <div class="card text-bg-dark text-light" style="width: 18rem;">
+                    <a href="/posts/<%= post.id %>"><img src="<%= post.postBanner %>" class="card-img-top"
+                            alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= post.postTitle %>
+                        </h5>
+                        <p class="card-text">
+                            <%= post.postDesc %>
+                        </p>
+                    </div>
+
+                    <div class="card-body d-flex g-2">
+
+                        <a href="/posts/<%= post.id %>/edit"><button class="btn btn-dark">Edit</button></a>
+
+                        <form action="/posts/<%= post.id %>?_method=delete" method="post">
+                            <button class="btn btn-dark text-danger">Delete</button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+                <% } %>
+
+
+
+        </div>
+
+
+    </body>
+
+    </html>
