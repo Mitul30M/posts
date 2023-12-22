@@ -11,7 +11,7 @@ A web app that works similar to thread and twitter. Althogh built for practising
 <code>nodemon \index.js</code>
 
 
-(Now it's almost ready just one final step,)
+(now it's almost ready just one final step,)
 
 
 <b>Step 3: In your browser search for <a href="localhost:3030/posts">localhost:3030/posts</a></b>
