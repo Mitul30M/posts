@@ -2,7 +2,7 @@
 A web app that works similar to thread and twitter. Althogh built for practising, you can try it out!! 
 
 
-<b>Step 1: After downloading the zip , open the folder in the terminal & type the following command in the terminal : </b>
+<b>Step 1: After downloading the zip, open the folder in the terminal & type the following command in the terminal : </b>
 <code>npm i</code>
 
 (This will download all the required Dependencies)
@@ -11,7 +11,7 @@ A web app that works similar to thread and twitter. Althogh built for practising
 <code>nodemon \index.js</code>
 
 
-(now it's almost ready just one final step,)
+(Now it's almost ready just one final step,)
 
 
 <b>Step 3: In your browser search for <a href="localhost:3030/posts">localhost:3030/posts</a></b>
